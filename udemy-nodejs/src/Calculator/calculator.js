@@ -20,7 +20,7 @@ app.get("/calculator", (req, res) => {
 });
 
 app.post("/", (req, res) => {
-  //## print object body
+  //## print object
   // console.log(req.body);
   //## print object body with property
   // console.log("nama:" ,req.body.num1);
@@ -63,6 +63,6 @@ app.listen(port, () => {
 
 /* 
 -install body parser for parsing middle ware
-
+- extended : true , allows you to create nested objects within your query strings
 
 */
