@@ -1,0 +1,7 @@
+refrence: https://stackoverflow.com/questions/14790910/stop-all-instances-of-node-js-server
+syntax code:
+taskkill /f /im node.exe
+
+
+
+status code 200 indication 'OK'

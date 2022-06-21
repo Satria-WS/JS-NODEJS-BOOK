@@ -1,0 +1,26 @@
+$ npm init
+
+
+
+
+
+note : 
+Before we run npm install express, npm requires that we have a file
+package.json to track all packages and their versions used in our app.
+
+run npm install express now without the file, you will get a series of warnings
+like “ no such file or directory, open … package.json ” .
+
+syntax code:
+
+{
+"name": "node",
+"version": "1.0.0",
+"description": "",
+"main": "index.js",
+"scripts": {
+"test": "echo \"Error: no test specified\" && exit 1"
+},
+"author": "",
+"license": "ISC"
+}
