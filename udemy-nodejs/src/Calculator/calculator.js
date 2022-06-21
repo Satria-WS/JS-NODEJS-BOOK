@@ -31,15 +31,30 @@ app.post("/", (req, res) => {
     "last-name": req.body["last-name"],
   };
   console.log(userLogin);
-
+  //## print store on object userCalculate
   const userCalculate = {
     num1: req.body.num1,
     num2: req.body.num2,
   };
   console.log(userCalculate);
 
-  res.send("Thanks");
+  //## rumus fungsi penambahan
+  function Penambahan(number1, number2) {
+    const result = Number(number1) + Number(number2);
+    console.log("Penambahan: ", result);
+  }
+  Penambahan(userCalculate.num1, userCalculate.num2);
+  // Penambahan(req.body.num1 , req.body.num2);
+  // console.log(req.body.num1 + req.body.num2)
 
+  //## rumus fungsi pengurangan
+  function Pengurangan(number1, number2) {
+    const result = Number(number1) - Number(number2);
+    console.log("Pengurangan: ", result);
+  }
+  Pengurangan(req.body.num1, req.body.num2);
+
+  res.send("Thanks");
 });
 
 app.listen(port, () => {
