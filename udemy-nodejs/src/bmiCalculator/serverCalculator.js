@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "bmiCalculator.html"));
 });
 
-app.post("/", (req, res) => {
+app.post("/Calculator", (req, res) => {
   //##check with log req.body
   //console.log(req.body);
   const objectBMI = {
@@ -69,3 +69,13 @@ if (check1(9) === 9) {
   console.log(false);
 }
  */
+
+/* 
+//## Note
+//parseFloat() , convert string to firs number
+//example: 
+var num_10 = "10";
+console.log(parseFloat(num_10) === 10)//true
+console.log(num_10 + 4);
+console.log(parseFloat(num_10) + 4)//14 
+*/
