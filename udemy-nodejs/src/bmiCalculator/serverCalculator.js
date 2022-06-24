@@ -8,8 +8,7 @@ const port = 8080;
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  //##just check console
-  //res.send("this is my bmi calculator");
+  //## create resend
   res.sendFile(path.join(__dirname, "bmiCalculator.html"));
 });
 
