@@ -12,3 +12,9 @@ JokeAPI offers these following endpoints:
 
 example URL api:
 URL: https://v2.jokeapi.dev/joke/Programming?lang=de&blacklistFlags=religious,racist,sexist&format=txt&type=single&idRange=1-35&amount=2
+
+
+
+
+
+- search in google key world , Make get request to external server with node
