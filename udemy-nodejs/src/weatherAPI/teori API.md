@@ -18,3 +18,10 @@ URL: https://v2.jokeapi.dev/joke/Programming?lang=de&blacklistFlags=religious,ra
 
 
 - search in google key world , Make get request to external server with node
+
+
+
+-status running server
+• 200  = server okay
+• 400 = wrong parameter on url api
+• 401 = wrong API id like typo
