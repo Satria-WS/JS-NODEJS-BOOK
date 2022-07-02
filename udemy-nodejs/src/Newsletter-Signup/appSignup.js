@@ -47,6 +47,10 @@ app.post("/formSignup", (req, res) => {
     res.send("succesfull");
     console.log(response.id);
   }
+  console.log(userSignup);
+  //##catch function for catch error if false
+  //must use catch(error) function . if not , code will not work
+  run().catch((error) => res.sendFile(__dirname + "/failure.html"));
 });
 
 //##listen-------------------------------------------------------------------------
