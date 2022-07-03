@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const path = require("path");
 const mailchimp = require("@mailchimp/mailchimp_marketing");
 const app = express();
-const port = 8080;
+const port = 1000;
 
 //##static assets--------------------------------------------------------------------------
 //readed public folder as static
