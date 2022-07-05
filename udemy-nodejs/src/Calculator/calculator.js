@@ -7,11 +7,6 @@ const port = 3000;
 //## urlencoded , for grab the information that gets posted to your server from an HTML form
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get("/", (req, res) => {
-  //res.send("Hello World");
-  res.sendFile(__dirname + "/index.html");
-});
-
 //## sendFile method , for send file index.html to route
 app.get("/calculator", (req, res) => {
   // res.sendFile(path.join(__dirname, "index.html"));
